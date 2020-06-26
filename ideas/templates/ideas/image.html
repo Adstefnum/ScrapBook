@@ -1,0 +1,10 @@
+{% extends 'ideas/base.html' %}
+{% block nav_item_image %}active{% endblock nav_item_image %}
+
+{% block body %}
+  <ul>
+  	{% for ob in object_list %}
+		<li>{{ob.file_name}}</li>
+  	{% endfor %}
+  </ul>
+{% endblock %}
